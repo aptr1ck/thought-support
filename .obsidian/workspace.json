@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "Home.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -149,7 +149,15 @@
   },
   "active": "632e4502d704d830",
   "lastOpenFiles": [
+    "Resources/Thought Support Help/Recommend Theme.md",
+    "Home.md",
     "Resources/Thought Support Help/Required Plugins.md",
-    "Home.md"
+    "Areas/Routines/Cleaning/Friday.md",
+    "Areas/Routines/Cleaning/Daily Morning.md",
+    "Areas/Routines/Cleaning/Daily Evening.md",
+    "Resources/Thought Support Help/Todays Cleaning Routine.md",
+    "LICENSE.md",
+    "Resources/Random Excerpt.md",
+    "Resources/Vault/Settings (Private Example).md"
   ]
 }

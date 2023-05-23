@@ -163,8 +163,8 @@ dv.table(
     "Visibility (metres)",
   ],
   forecast.json.list.map((row) => [
-    luxon.DateTime.fromSeconds(row.dt).toLocaleString(
-      luxon.DateTime.DATETIME_SHORT
+    DateTime.fromSeconds(row.dt).toLocaleString(
+      DateTime.DATETIME_SHORT
     ),
     "![|50](" +
       "http://openweathermap.org/img/wn/" +
@@ -233,7 +233,7 @@ const eveningRoutinePage = dv.page(
 );
 
 const { totalIncompleteTaskCount, activeIncompleteTaskCount } =
-  CleaningTasks.todaysIncompleteCount(dv, luxon);
+  CleaningTasks.todaysIncompleteCount(dv);
 dv.table(
   ["Routine", "Incomplete Tasks"],
   [

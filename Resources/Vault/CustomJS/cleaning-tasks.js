@@ -71,7 +71,7 @@ class CleaningTasks {
     }
   }
 
-  todaysIncompleteCount(dv, luxon) {
+  todaysIncompleteCount(dv) {
     const now = dv.date("now");
     const lists = this.getTodaysTasks(dv);
     let total = 0;
@@ -79,7 +79,7 @@ class CleaningTasks {
     for (const list of Object.values(lists)) {
       for (const task of list) {
         const page = dv.page(task.path);
-        if (now > luxon.DateTime.fromFormat(page.start || "00:00", "HH:mm")) {
+        if (now > dv.date(page.start || "00:00", "HH:mm")) {//DateTime.fromFormat(page.start || "00:00", "HH:mm")) {
           active += task.fullyCompleted ? 0 : 1;
         }
         total += task.fullyCompleted ? 0 : 1;
